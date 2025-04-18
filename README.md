@@ -1,5 +1,3 @@
-
-```markdown
 # 📩 SMS/Email Spam Classifier
 
 This is a simple yet powerful web app built with **Streamlit** that uses machine learning (ML) to classify SMS or email messages as **Spam** or **Not Spam**.
@@ -10,7 +8,7 @@ This is a simple yet powerful web app built with **Streamlit** that uses machine
 
 - Built with `Streamlit` for an interactive front-end  
 - Uses Natural Language Processing (NLP) for text preprocessing  
-- Trained on a spam dataset using TF-IDF vectorization and an ML classifier  
+- Trained on a dataset using TF-IDF vectorization and an ML classifier  
 - Supports multiple ML models (currently loaded via `model.pkl`)
 
 ---
@@ -29,12 +27,12 @@ This is a simple yet powerful web app built with **Streamlit** that uses machine
 
 ```
 ├── app.py                       # Streamlit app
-├── spam.csv                    # Dataset (used during model training)
-├── model.pkl                   # Trained ML model
-├── vectorizer.pkl              # Fitted TF-IDF vectorizer
-├── requirements.txt            # Python dependencies
-├── Procfile                    # For deploying to Heroku (optional)
-└── README.md                   # You're here!
+├── spam.csv                     # Dataset (used during model training)
+├── model.pkl                    # Trained ML model
+├── vectorizer.pkl               # Fitted TF-IDF vectorizer
+├── requirements.txt             # Python dependencies
+├── Procfile                     # For deploying to Heroku (optional)
+└── README.md                    # You're here!
 ```
 
 ---
@@ -95,33 +93,27 @@ nltk.download('stopwords')
 
 ```
 +------------------------------+
-| Email/SMS Spam Classifier   |
+| Email/SMS Spam Classifier    |
 +------------------------------+
-| Enter the message:          |
-| [ This is a free prize! ]   |
-|                             |
-| [ Predict ]                 |
+| Enter the message:           |
+| [ This is a free prize! ]    |
+|                              |
+| [ Predict ]                  |
 +------------------------------+
-| Result:                     |
-|     Spam 💀                 |
+| Result:                      |
+|     Spam                   |
 +------------------------------+
 ```
 
 ---
 
-## 🐳 Optional Deployment (Heroku)
+## 🐳 Optional Deployment (Render)
 
 Make sure you have:
 - `Procfile`
 - `requirements.txt`
 
-Then:
-```bash
-git init
-heroku create your-app-name
-git add .
-git commit -m "initial commit"
-git push heroku master
+
 ```
 
 ---
@@ -129,4 +121,3 @@ git push heroku master
 ## 🧾 License
 
 MIT License – use freely and customize!
-```
